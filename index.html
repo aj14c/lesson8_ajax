@@ -1,8 +1,8 @@
 <html>
 <!- - 
 Program Name:   Seminole Movie Connection
-Author: 
-Date: 
+Author: Andrew Jones
+Date: 4/14/17
 Filename:   index.html
 - ->
     
@@ -53,6 +53,45 @@ Filename:   index.html
             <h3 class="list-group-item-heading">Release Date:</h3>
             <p class="list-group-item-text lead text-primary" id="Released">  </p>
         </a> 
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading"> Director</h3>
+            <p class="list-group-item-text lead text-primary" id="Director">  </p>
+        </a>
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading"> Writers</h3>
+            <p class="list-group-item-text lead text-primary" id="Writer">  </p>
+        </a>
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading"> Producer</h3>
+            <p class="list-group-item-text lead text-primary" id="Producer">  </p>
+        </a>
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading"> Quotes</h3>
+            <p class="list-group-item-text lead text-primary" id="Quotes">  </p>
+        </a>
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading"> Runtime</h3>
+            <p class="list-group-item-text lead text-primary" id="Runtime">  </p>
+        </a>
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading"> Genre</h3>
+            <p class="list-group-item-text lead text-primary" id="Genre">  </p>
+        </a>
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading"> Language</h3>
+            <p class="list-group-item-text lead text-primary" id="Language">  </p>
+        </a>
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading"> Awards</h3>
+            <p class="list-group-item-text lead text-primary" id="Awards">  </p>
+        </a>
 
     </div>
 </div> 
@@ -71,6 +110,15 @@ Filename:   index.html
                      $('#Actors').html(json.Actors);
                      $('#Plot').html(json.Plot);
                      $('#Released').html(json.Released);
+                     $('#Director').html(json.Director);
+                     $('#Writer').html(json.Writer);
+                     $('#Producer').html(json.Producer);
+                     $('#Quotes').html(json.Quotes);
+                     $('#Runtime').html(json.Runtime);
+                     $('#Genre').html(json.Genre);
+                     $('#Language').html(json.Language);
+                     $('#Awards').html(json.Awards);
+                    
                 })
                 .fail(function() {
                       alert("Posting failed.");              
